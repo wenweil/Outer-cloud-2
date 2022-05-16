@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Auth0ProviderWithHistory from './component/auth/auth0-provider';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Auth0ProviderWithHistory>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Auth0ProviderWithHistory>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
