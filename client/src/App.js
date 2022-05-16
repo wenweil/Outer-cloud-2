@@ -1,12 +1,16 @@
 import './App.css';
 import React from "react";
-import { Login } from "./component/Login";
+import { Route, Routes } from 'react-router-dom';
+import { Home } from './component/Home';
+import { Index } from './component/Index';
 
 function App() {
+
   return (
-    <div className='Application'>
-      <Login/>
-    </div>
+    <Routes>
+      <Route path="/" exact element={<Home/>} />
+      <Route path="/dash-board" element={<Index/>} />
+    </Routes>
   );
 }
 
