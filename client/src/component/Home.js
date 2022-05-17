@@ -8,7 +8,7 @@ export const Home = () => {
 
 
   return (
-    <div>
+    <div className='Application'>
       {
         isAuthenticated ? <Logout/> : <Login/>
       }

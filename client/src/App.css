@@ -3,6 +3,86 @@
     min-height: 100vh;
 }
 
+.Sidebar{
+    display:flex;
+    width:15vw;
+    height:96vh;
+    margin-left: 2%;
+    position: absolute;
+    top:2%;
+    background-color: #a8b6b8a1;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.Profile{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-left: 5%;
+    height:13%;
+    width: 90%;
+    background-color: #747474;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #282c34;
+}
+
+.Profile_Pic{
+    margin-left: 2%;
+    margin-top: 5%;
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+}
+
+.Profile_Name{
+    margin-left: 2%;
+    margin-top:10%;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.Sidebar_Lists{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 5%;
+    height:40%;
+    width: 90%;
+    background-color: #747474;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #282c34;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.Sidebar_Lists::-webkit-scrollbar{
+    display:none;
+}
+
+.ListItem{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.ListItem_Profile{
+    margin-top: 2%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ListItem_Name{
+    font-size: medium;
+    color:white;
+    margin-left: 2%;
+}
+
 .Login {
     display:flex;
     height:250px;
